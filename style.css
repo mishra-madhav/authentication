@@ -1,0 +1,56 @@
+
+
+body{
+    color-primary: rgb(8, 163, 190);
+    color-secondary: rgb(97, 95, 95);
+
+    
+}
+
+.field{
+    margin: 5px;
+}
+
+.columns {
+    margin: 5rem auto;
+    width: min(90% 75rem);
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+}
+
+.card, .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control{
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(8, 163, 190);
+    border-left: 1.5rem solid rgb(8, 163, 190);
+    border-radius: 5px;
+    outline: none; 
+}
+
+a{
+    /* font-size: smaller; */
+    font-weight: bold;
+    color: rgb(8, 163, 190);;
+}
+
+h3{
+    font-weight: bolder;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 5%;
+    width: 100%;
+    color:rgb(141, 112, 112);
+    text-align: center;
+}
+
