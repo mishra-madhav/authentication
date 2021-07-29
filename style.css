@@ -26,7 +26,6 @@ body{
 }
 
 .form-control{
-    margin: 20px;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid rgb(8, 163, 190);
@@ -44,9 +43,14 @@ a{
 h3{
     font-weight: bolder;
 }
+#CV{
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(134, 233, 147);
+    
+}
 
 .footer{
-    position: fixed;
     left: 0;
     bottom: 5%;
     width: 100%;
