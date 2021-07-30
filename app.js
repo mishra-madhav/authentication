@@ -35,7 +35,7 @@ function signup(){
     
     if(password != repassword) return;
 
-    request.open('POST','https://my-json-server.typicode.com/mishra-madhav/mock-json/users');
+    request.open('POST','https://my-json-server.typicode.com/mishra-madhav/mock-json/users/');
     request.setRequestHeader("Content-Type", "application/json");
     request.send(
         JSON.stringify({
@@ -51,7 +51,7 @@ function login(){
     let password=document.getElementById('loginPassword').value;
     let outputDiv=document.getElementById('message');
 
-    request.open('GET','https://my-json-server.typicode.com/mishra-madhav/mock-json/db/'+username);
+    request.open('GET','https://my-json-server.typicode.com/mishra-madhav/mock-json/users/'+username);
     request.send();
     request.onload= ()=>{
         const response=JSON.parse(request.responseText)
