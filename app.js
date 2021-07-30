@@ -3,7 +3,7 @@ function redirect(){
 }
 
 function toggleVisi(){
-    let outputDiv=document.getElementById('CV');
+    let outputDiv=document.getElementById('message');
     outputDiv.style.display='none';
 
     let signupBox= document.getElementById('signup');
@@ -14,7 +14,7 @@ function toggleVisi(){
     }
 }
 function toggleVisi2(){
-    let outputDiv=document.getElementById('CV');
+    let outputDiv=document.getElementById('message');
     outputDiv.style.display='none';
 
     let signupBox= document.getElementById('signup');
