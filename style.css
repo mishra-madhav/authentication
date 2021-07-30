@@ -43,11 +43,9 @@ a{
 h3{
     font-weight: bolder;
 }
-#CV{
-    font-size: x-large;
+#message{
+    /* font-size: x-large; */
     font-weight: bold;
-    color: rgb(134, 233, 147);
-    
 }
 
 .footer{

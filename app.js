@@ -1,3 +1,7 @@
+function redirect(){
+    window.location="resume.html";
+}
+
 function toggleVisi(){
     let outputDiv=document.getElementById('CV');
     outputDiv.style.display='none';
@@ -45,8 +49,7 @@ function login(){
     let request=new XMLHttpRequest();
     let username=document.getElementById('loginUsername').value;
     let password=document.getElementById('loginPassword').value;
-    let outputDiv=document.getElementById('CV');
-    console.log(username, password);
+    let outputDiv=document.getElementById('message');
 
     request.open('GET','http://localhost:3000/users/'+username);
     request.send();
@@ -55,9 +58,10 @@ function login(){
         console.log(outputDiv);
         if(response.password===password){
             outputDiv.style.display='block';
+            redirect();
         }
         else{
-            outputDiv.innerHTML="Access Denied";
+            outputDiv.innerHTML="Retry- wrong username/password combination";
             outputDiv.style.color='red';
             outputDiv.style.display='block';
         }
