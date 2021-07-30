@@ -51,7 +51,7 @@ function login(){
     let password=document.getElementById('loginPassword').value;
     let outputDiv=document.getElementById('message');
 
-    request.open('GET','https://my-json-server.typicode.com/mishra-madhav/mock-json/users'+username);
+    request.open('GET','https://my-json-server.typicode.com/mishra-madhav/mock-json/db/'+username);
     request.send();
     request.onload= ()=>{
         const response=JSON.parse(request.responseText)
