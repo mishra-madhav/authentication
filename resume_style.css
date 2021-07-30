@@ -232,3 +232,19 @@ body {
 .resume .resume_right .resume_hobby ul li:last-child:before {
   display: none;
 }
+
+.nav{
+  display: flex;
+  justify-content: right;
+}
+
+#nav-btn{
+  color: #0bb5f4;
+  font-weight: bold;
+  font-size: large;
+  background-color: white;
+  border: 1px solid #0bb5f4;
+  border-radius: 5px;
+  padding: 5px
+
+}
